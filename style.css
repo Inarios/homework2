@@ -1,6 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
 body {
     background-color: white;
-    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
 }
 
 .title {
@@ -8,9 +17,8 @@ body {
     font-weight: 400;
     line-height: 1.325;
     text-transform: uppercase;
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One', normal;
     color: white;
-    margin-bottom: 19px;
 }
 
 .button {
@@ -31,10 +39,6 @@ body {
     cursor: pointer;
 }
 
-.colororange {
-    color: rgba(227, 184, 115, 1)
-}
-
 p {
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -42,27 +46,6 @@ p {
     font-size: 22px;
     line-height: 1.6;
     color: white;
-    margin-bottom: 41px;
-}
-
-header {
-
-    background-color: #131313;
-
-
-}
-
-.container {
-    width: 1256px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
 }
 
 .headtext {
@@ -73,18 +56,32 @@ header {
     line-height: 1.4;
 }
 
-.logo {
-    margin-top: 37px;
-    margin-bottom: 36px;
-    margin-right: 95px;
+.colororange {
+    color: rgba(227, 184, 115, 1)
+}
+
+header {
+    background-color: #131313;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 83px;
 }
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
-    width: 581px;
-    margin-right: 67px;
+    gap: 47px;
 }
 
 .spisok {
@@ -98,6 +95,7 @@ header {
 
 .phone {
     margin-right: 45px;
+    text-decoration: underline;
 
 }
 
@@ -121,13 +119,22 @@ header {
 
 .home {
     padding-top: 194px;
-    padding-left: 42px;
+    padding-left: 134px;
+}
+
+.titlehome {
+    margin-bottom: 19px;
+}
+
+.parhome {
+    margin-bottom: 41px;
 }
 
 .buttonhome1 {
     padding: 20px 41px;
     width: 207px;
     margin-right: 20px;
+    margin-bottom: 208px;
 }
 
 .buttonhome2 {
@@ -135,6 +142,99 @@ header {
     box-sizing: border-box;
     width: 207px;
     background-color: rgba(0, 0, 0, 0);
-    outline: 1px solid #FFFFFF;
-    margin-bottom: 208px;
+    border: 1px solid #FFFFFF;
+}
+
+.page2 {
+    background-color: rgba(19, 19, 19, 1);
+    padding-top: 107px;
+}
+
+.projects {
+    padding-left: 134px;
+    padding-right: 134px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projspisok {
+    font-size: 14px;
+    line-height: 1.35;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+.chosen {
+    color: rgba(227, 184, 115, 1);
+    border-bottom: rgba(227, 184, 115, 1) 1px solid;
+}
+
+.slidermenu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 0 52px 0;
+    padding-inline-start: 0;
+}
+
+.description {
+    width: 442px;
+    padding-top: 68px
+}
+
+.params {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 107px);
+    margin-bottom: 25px;
+}
+
+.desctitle {
+    font-size: 27px;
+    line-height: 1.37;
+    margin-bottom: 34px;
+}
+
+.paramtitle {
+    font-size: 18px;
+    line-height: 1.4;
+    color: rgba(227, 184, 115, 1);
+    margin-bottom: 9px;
+}
+
+.desctext {
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 42px;
+}
+
+.paramtext {
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.projphoto {
+    margin-bottom: 416px;
+}
+
+.screencontainer{
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+}
+.screen {
+    background: none;
+    position: absolute;
+    top:-324px;
+    z-index: 2;
+   
+}
+.screentitle {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.4;
+    color:red;   
+    
 }
