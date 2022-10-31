@@ -70,6 +70,19 @@ header {
     padding: 0 20px;
 }
 
+.input {
+    border-style: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    width: 231px;
+    background-color:rgba(0, 0, 0, 0);
+}
+
+.input::placeholder {
+    color: rgba(54, 54, 54, 1);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
 .head {
     display: flex;
     align-items: center;
@@ -103,7 +116,7 @@ header {
     background-image: url(images/image1.jpg);
     background-size: cover;
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 .page1::before {
@@ -113,7 +126,7 @@ header {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: -1;
 }
 
@@ -219,22 +232,405 @@ header {
     margin-bottom: 416px;
 }
 
-.screencontainer{
+.screencontainer {
     position: relative;
-    width: 1440px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
 }
+
 .screen {
     background: none;
-    position: absolute;
-    top:-324px;
-    z-index: 2;
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.videocont {
+    position: absolute;
+    top: -324px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .screentitle {
     text-align: center;
     font-size: 20px;
     line-height: 1.4;
-    color:red;   
-    
+    color: white;
+    margin-bottom: 12px;
+
 }
+
+.camera {
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 31px;
+}
+
+.logocam {
+    margin: 0 5px;
+}
+
+.screencast {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    filter: brightness(40%);
+    margin-bottom: 62.5px;
+}
+
+.playicon {
+    position: absolute;
+    cursor: pointer;
+}
+
+.line {
+    width: 55px;
+    border-top: 2px solid rgba(227, 184, 115, 1);
+    margin-bottom: 34.5px;
+}
+
+.screentext {
+    color: rgba(54, 54, 54, 1);
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+    width: 681px;
+    margin-bottom: 91.5px;
+}
+
+.personaldata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 37px;
+    margin-bottom: 76px;
+}
+
+.form1,
+.form2 {
+    display: flex;
+    flex-direction: column;
+    color: rgba(54, 54, 54, 0.5);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.inputall {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.submit {
+    width: 200px;
+    height: 51px;
+    font-style: normal;
+    font-size: 13px;
+    text-align: center;
+}
+
+.checklable {
+    color: rgba(24, 24, 24, 1);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid rgba(227, 184, 115, 1);
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.custom-checkbox:checked+label::before {
+    background-image: url(/images/checkbox.svg);
+}
+
+.examples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page4title {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: rgba(24, 24, 24, 1);
+    margin-bottom: 13px;
+}
+
+.logoinstr {
+    margin-bottom: 31px;
+}
+
+.allexampls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.exampl1, .exampl2, .exampl3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.examplinfo {
+    position: relative;
+    width: 330px;
+    top: -127px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.exampldesc {
+    padding: 25px 0 0 34px;
+}
+
+.exampltitle {
+    color: rgba(54, 54, 54, 1);
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 13px;
+}
+
+.examplspisok {
+    list-style-position: inside;
+    color: rgba(149, 149, 149, 1);
+    font-size: 13px;
+    line-height: 2;
+    margin-bottom: 49px;
+}
+
+.exbutton {
+    z-index: 2;
+    position: absolute;
+    top: 275px;
+    width: 228px;
+    height: 54px;
+    padding: 0;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.page5 {
+background-image: url(/images/seviceback.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+
+.servicecontainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.serviceform {
+    position: relative;
+    background-color: rgba(19, 19, 19, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:39px;
+    padding: 28px 49px;
+    width: 506px;
+    color:rgba(255, 255, 255, 0.5);
+}
+
+.servicetext {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+}
+.serviceinput {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 13px;
+    width: 100%;
+    color: white;
+}
+.serviceinput3 {
+    margin-bottom: 16px;
+}
+
+.serviceinput::placeholder {
+    color:white
+}
+
+.serviceinp {
+    display: flex;
+    flex-direction: column;
+    justify-self: space-between;
+    gap:48px;
+}
+
+.checklable2 {
+    color:white;
+}
+
+.servicecircle {
+    display: flex;
+    align-items: center;
+}
+
+.circletext {
+    color: rgba(54, 54, 54, 1)
+}
+
+.circlenumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.numb {
+    position: absolute;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.circletext {
+    font-size: 14px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+    max-width: 450px;
+}
+
+.servsubmit {
+    align-self: flex-end;
+}
+
+.pig {
+display: flex;
+position: absolute;
+align-self: flex-start;
+bottom: -150px;
+align-items: center;
+}
+
+.pigtext {
+    font-size: 18px;
+line-height: 1.4;
+color: rgba(227, 184, 115, 1);
+margin-bottom: 20px;
+}
+
+.page6 {
+    margin-top: 350px;
+        background-image: url(images/back6.jpg);
+        background-size: cover;
+        position: relative;
+        z-index: 0;
+    }
+    
+    .page6::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: -1;
+    }
+
+.fantcont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fantleft {
+    padding-top: 137px;
+}
+.fanttitle {
+    font-size: 27px;
+    line-height: 1.4;
+    color: rgba(227, 184, 115, 1);
+    margin-bottom: 47px;
+}
+
+.fantspisok {
+    list-style: none;
+    margin-bottom: 97px;
+}
+
+.fantpoint{
+    font-size: 20px;
+    line-height: 2;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.fantli {
+    margin-bottom: 25px;
+}
+
+.fantchosen{
+    color: rgba(227, 184, 115, 1);
+    border-bottom: rgba(227, 184, 115, 1) 1px solid;
+}
+
+.fantphoto {
+    display: flex;
+    gap:43px;
+}
+
+.fantcolumn1, .fantcolumn2 {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+    position: relative;
+}
+
+.fantcolumn1 {
+    top:150px;
+}
+
+.fantcolumn2 {
+    top:-50px;
+}
+
