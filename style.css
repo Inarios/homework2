@@ -168,6 +168,7 @@ header {
     padding-right: 134px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .projspisok {
@@ -714,6 +715,9 @@ margin-bottom: 20px;
     box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
 }
 
+.client3 {
+    margin-bottom: 300px;
+}
 .border {
     border-left: solid 0.75px white; 
     height: 54px;
@@ -805,6 +809,7 @@ text-align: center;
     .soc {
         display: flex;
         gap: 15px;
+        cursor: pointer;
     }
 
     .map {
