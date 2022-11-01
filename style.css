@@ -420,7 +420,7 @@ header {
     padding: 25px 0 0 34px;
 }
 
-.exampltitle {
+.exampltitle, .clientname {
     color: rgba(54, 54, 54, 1);
     font-family: 'Yeseva One';
     font-style: normal;
@@ -430,7 +430,7 @@ header {
     margin-bottom: 13px;
 }
 
-.examplspisok {
+.examplspisok, .clientp {
     list-style-position: inside;
     color: rgba(149, 149, 149, 1);
     font-size: 13px;
@@ -581,6 +581,7 @@ margin-bottom: 20px;
 .fantcont {
     display: flex;
     justify-content: space-around;
+    flex-wrap:wrap;
 }
 
 .fantleft {
@@ -634,3 +635,187 @@ margin-bottom: 20px;
     top:-50px;
 }
 
+.page7 {
+    position: relative;
+   min-height: 1150px;
+}
+.page7::before {
+    background-image: url(/images/backcity.svg);
+    background-repeat: repeat-x;
+
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: bottom;
+    z-index: -1;
+}
+
+.clientstext {
+    color:   rgba(54, 54, 54, 1);
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.clients {
+    padding-top: 130px;
+}
+
+.clientphoto {
+    border-radius: 50%;
+}
+
+.allclients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 54px;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.client1, .client2, .client3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.client {
+display: flex;
+align-items: center;
+gap: 20px;
+margin-bottom: 20px;
+}
+
+.clientname {
+    margin: 0;
+}
+
+.clientinfo {
+    
+    padding: 20px 30px 20px 20px;
+    width: 376px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+.clientbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    top:390px;
+    gap:15px;
+    width: 293px;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+
+.border {
+    border-left: solid 0.75px white; 
+    height: 54px;
+    font-size: 17px;
+}
+
+.questionform {
+width: 900px;
+padding: 40px 160px;
+}
+
+.doubleinput {
+    display: flex;
+    justify-content: space-around;
+    gap: 95px;
+}
+
+.buttoncenter {
+    align-self: center;
+}
+
+.lablecenter {
+    align-items: center;
+}
+
+.questioninput {
+    width: 241px;
+}
+
+.questiontitle {
+    font-size: 20px;
+    text-align: center;
+}
+
+.checklable3 {
+    display: flex;
+    justify-content: center;
+}
+
+.questioncont {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.questions {
+    position: absolute;
+    top: -225px;
+    z-index: 2;
+}
+
+.adresscont {
+    padding-top: 400px;
+}
+
+
+.adresstitle {
+    font-size: 20px;
+color:rgba(227, 184, 115, 1);
+text-align: center;
+}
+
+.page8 {
+        background-image: url(images/backadress.jpg);
+        background-size: cover;
+        position: relative;
+        z-index: 0;
+    }
+    
+    .page8::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(180deg, rgba(9, 9, 9, 0.9) 3.47%, rgba(24, 24, 24, 0.9) 100%);
+        z-index: -1;
+    }
+
+    .adress {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:26px;
+        
+    }
+
+    .soc {
+        display: flex;
+        gap: 15px;
+    }
+
+    .map {
+        margin-bottom: 70px;
+    }
+    
+    footer {
+        background-color: #131313;
+        
+    }
+
+    .foot {
+        height: 133px;
+    }
