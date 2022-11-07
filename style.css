@@ -184,6 +184,9 @@ header {
     border-bottom: rgba(227, 184, 115, 1) 1px solid;
 }
 
+.arrow {
+    width: 205px;
+}
 .slidermenu {
     display: flex;
     justify-content: space-between;
