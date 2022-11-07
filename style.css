@@ -198,9 +198,11 @@ header {
     display: flex;
     flex-direction: column;
 }
+
 .projmobile {
     display: none;
 }
+
 .params {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -351,7 +353,6 @@ header {
 
 .custom-checkbox {
     position: absolute;
-    z-index: -1;
     opacity: 0;
 }
 
@@ -826,6 +827,10 @@ header {
 .soc {
     display: flex;
     gap: 15px;
+
+}
+
+.soclogo {
     cursor: pointer;
 }
 
@@ -846,6 +851,28 @@ footer {
     display: none;
 }
 
+@media (min-width: 768px) and (max-width: 1069px) {
+    .clients {
+        padding-top: 200px;
+    }
+
+    .map {
+        width: 90%;
+    }
+
+    .video {
+        width: 83%;
+    }
+
+    .questionform {
+        width: 730px;
+        padding: 40px 80px;
+    }
+
+    .menu {
+        display: none;
+    }
+}
 
 @media (max-width:768px) {
     .menu {
@@ -901,23 +928,27 @@ footer {
         text-align: center;
         margin-bottom: 50px;
     }
- .projmobile {
-    position: relative;
-    margin-bottom: 36px;
-    display: flex;
-    align-items: center;
-    width: 340px;
-    align-self: center;
- }
- .iconarrowleft {
-    position: absolute;
-    left: 10px;
 
- }
- .iconarrowright {
-    position: absolute;
-    right: 10px;
- }
+    .projmobile {
+        position: relative;
+        margin-bottom: 36px;
+        display: flex;
+        align-items: center;
+        width: 340px;
+        align-self: center;
+    }
+
+    .iconarrowleft {
+        position: absolute;
+        left: 10px;
+
+    }
+
+    .iconarrowright {
+        position: absolute;
+        right: 10px;
+    }
+
     .paramtitle {
         font-size: 14px;
     }
@@ -930,9 +961,12 @@ footer {
         grid-template-rows: repeat(2, 90px);
         margin-bottom: 25px;
     }
-    .paramtitle, .paramtext {
+
+    .paramtitle,
+    .paramtext {
         padding-left: 20px;
     }
+
     .arrow {
         display: none;
     }
@@ -957,12 +991,15 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
     .playicon {
         width: 65px;
     }
+
     .line {
         margin-top: 28px;
     }
+
     .inputall {
         flex-direction: column;
     }
@@ -994,108 +1031,134 @@ footer {
     .inputall {
         position: relative;
     }
+
     .mobilebutton {
-position: absolute;
-bottom: -165px;
-align-self: center;
-width: 100%;
+        position: absolute;
+        bottom: -165px;
+        align-self: center;
+        width: 100%;
     }
-.allexampls {
-    gap:0;
-    margin-bottom: 0;
-}
-.examples {
-    padding-top: 83px;
-}
-.exampimg {
-    width: 340px;
-}
-.examplinfo {
-    width: 270px;
-    top:-180px
 
-}
-.exampl1, .exampl2, .exampl3 {
-    align-items: flex-start;
-}
+    .allexampls {
+        gap: 0;
+        margin-bottom: 120px;
+        flex-direction: column;
+    }
 
-.exampltitle {
-    font-size: 15px;
-    margin-bottom: 10px;
-}
+    .examples {
+        padding-top: 83px;
 
-.examplspisok {
-    margin-bottom: 30px;
-}
+    }
 
-.mobexbutton {
-    top: 245px;
-    font-size: 15px;
-} 
+    .exampimg {
+        width: 340px;
+    }
 
-.page5 {
-    display: none;
-}
+    .examplinfo {
+        width: 270px;
+        top: -180px
+    }
 
-.contmobile {
-    display: flex;
-    flex-direction: column;
-}
+    .exampl1,
+    .exampl2,
+    .exampl3 {
+        align-items: flex-start;
+    }
 
-.page6 {
-    display: none;
-}
+    .exampltitle {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
 
-.page7 {
-    display: none;
-}
+    .examplspisok {
+        margin-bottom: 30px;
+    }
 
-.page8 {
-    background-color: #131313;
-    background-image: none;
-}
+    .mobexbutton {
+        top: 245px;
+        font-size: 15px;
+    }
 
-.doubleinput {
-    flex-direction: column;
-    gap: 48px;
+    .page5 {
+        display: none;
+    }
 
-}
-.serviceinp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.questionform {
-    width: 100%;
-    padding: 100px 0 0 0;
-}
+    .page6mobile {
+        position: relative;
+    }
 
-.questions {
-    position: relative;
-    top:0;
-    width: 100%;
-}
+    .contmobile {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 2;
+        top: -203px;
+        margin: 0 auto;
+    }
 
-.adresscont {
-    padding-top: 50px;
-}
+    .page6 {
+        display: none;
+    }
 
-.buttoncenter {
-    width: 340px;
-}
-.map {
-    width: 340px;
-    order: -1;
-    margin-bottom: 0;
-}
-.soclogo {
-    margin-bottom: 50px;
-}
+    .page7 {
+        display: none;
+    }
 
-.adresstitle {
-    font-size: 18px;
-}
-footer {
-    display: none;
-}
+    .page8 {
+        background-color: #131313;
+        background-image: none;
+    }
+
+    .doubleinput {
+        flex-direction: column;
+        gap: 48px;
+
+    }
+
+    .serviceinp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .questionform {
+        width: 100%;
+        padding: 190px 0 0 0;
+    }
+
+    .questions {
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+
+    .adresscont {
+        padding-top: 50px;
+    }
+
+    .buttoncenter {
+        width: 340px;
+    }
+
+    .map {
+        width: 340px;
+        order: -1;
+        margin-bottom: 0;
+    }
+
+    .soclogo {
+        margin-bottom: 50px;
+    }
+
+    .adresstitle {
+        font-size: 18px;
+    }
+
+    .serviceinp label {
+        font-size: 13px;
+    }
+
+    footer {
+        display: none;
+    }
 }
