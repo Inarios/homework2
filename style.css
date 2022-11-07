@@ -353,6 +353,7 @@ header {
 
 .custom-checkbox {
     position: absolute;
+    z-index: -1;
     opacity: 0;
 }
 
@@ -373,7 +374,7 @@ header {
     margin-right: 0.5em;
     background-repeat: no-repeat;
     background-position: center center;
-
+    background-size: 110% 110%;
 }
 
 .custom-checkbox:checked+label::before {
